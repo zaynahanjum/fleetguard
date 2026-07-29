@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Sidebar from "@/components/ui/Sidebar";
-import Header from "@/components/ui/Header";
+import Sidebar from "@/components/dashboard/Sidebar";
+import Header from "@/components/dashboard/Navbar";
 import StatusBadge from "@/components/ui/StatusBadge";
 import DataTable from "@/components/ui/DataTable";
 import MetricBlock from "@/components/ui/MetricBlock";
