@@ -11,7 +11,7 @@ export async function GET(request, context) {
     .eq("id", id)
     .single();
 
-  if (error) {
+  if (error || !data) {
     return NextResponse.json(
       { message: "Vehicle not found" },
       { status: 404 }

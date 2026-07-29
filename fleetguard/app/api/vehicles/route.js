@@ -7,7 +7,6 @@ export async function POST(request) {
     const body = await request.json();
 
     const {
-      fleet_manager_id,
       vehicle_number,
       vehicle_type,
       brand,
@@ -42,7 +41,6 @@ export async function POST(request) {
     const { data, error } = await supabase
       .from("vehicles")
       .insert({
-        fleet_manager_id,
         vehicle_number,
         vehicle_type,
         brand,
