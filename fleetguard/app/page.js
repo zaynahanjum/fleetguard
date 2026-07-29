@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Login() {
   
@@ -75,7 +76,7 @@ export default function Login() {
           {/* Interactive Bento Feature Showcase */}
           <div className="grid grid-cols-3 gap-4 mb-8">
             <div className="glass-card p-4 rounded-xl hover:shadow-md transition-all">
-              <span className="material-symbols-outlined text-[#004ac6] text-[24px] mb-2">directions_car</span>
+              <span className="material-symbols-outlined text-[#004ac6] text-[24px] mb-2">directions</span>
               <h3 className="font-semibold text-xs text-[#0b1c30]">Vehicle Registry</h3>
               <p className="text-[11px] text-[#565e74] mt-0.5">Real-time status tracking</p>
             </div>
@@ -248,10 +249,19 @@ export default function Login() {
               🚀 Explore Demo Dashboard Directly
             </button>
           </div>
+<div className="mt-6 text-center text-sm text-[#565e74]">
+  New to FleetGuard?{" "}
+  <Link
+    href="/signup"
+    className="text-[#2563eb] font-semibold hover:underline"
+  >
+    Create an Account
+  </Link>
+</div>
 
-          <footer className="mt-12 text-center text-[11px] text-[#565e74]">
-            © 2026 FleetGuard Systems Inc. All rights reserved.
-          </footer>
+<footer className="mt-8 text-center text-[11px] text-[#565e74]">
+  © 2026 FleetGuard Systems Inc. All rights reserved.
+</footer>
         </div>
       </section>
     </main>
